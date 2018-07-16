@@ -21,6 +21,6 @@ The set of source files associated with this SConscript file.
 # path = [cwd + '/MQTTPacket/src']
 # path += [cwd + '/MQTTClient-RT']
 
-# group = DefineGroup('paho-mqtt', src, depend = ['PKG_USING_PAHOMQTT'], CPPPATH = path)
+group = DefineGroup('azure', src, depend = ['PKG_USING_AZURE'], CPPPATH = path)
 
-# Return('group')
+Return('group')
